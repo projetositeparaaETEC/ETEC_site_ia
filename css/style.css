@@ -1,11 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito&family=Oswald&display=swap');
-
  :root {
       --fundo: #07111F;
       --fundo-secundario: #0D1B2A;
       --texto: #e3ebf3;
       --texto-secundario: #9DB7D1;
-      --azul-destaque: #36A3FF;
+      --azul-destaque: #36A3FF;   
       --azul-hover: #55B7FF;
       --borda: #244766;
       --sombra: rgba(13, 92, 116, 0.781);
@@ -32,7 +30,7 @@
         background-image: url('../Img/fundoteste.jpg');
         background-repeat: repeat;
         color: var(--texto);
-        font-family: 'Nunito', sans-serif;
+        font-family: Arial, sans-serif;
     }
 
     .cabecalho {
@@ -53,23 +51,23 @@
       flex-wrap: wrap;
       gap: 20px;
       background-image: url('../Img/fundosegundario.png');
-
-      width: 100%;
-      max-width: none;
-      margin: 0;
-      padding: 10px 8%;
+      
+      width: 100%;          
+      max-width: none;       
+      margin: 0;      
+      padding: 10px 8%;            
       box-shadow: 0 4px 8px var(--sombra);
-
-      justify-content: flex-start;
-    }
+    
+      justify-content: flex-start; 
+    }   
 
     .menu a {
       display: flex;
       align-items: center;
       gap: 8px;
-
+  
       text-decoration: none;
-
+     
     }
 
     .menu a:hover {
@@ -95,21 +93,20 @@
     main h2 {
       margin: 0;
       font-size: 40px;
-      font-family: 'Oswald', sans-serif;
     }
     nav {
       background-color: #0e2844;
       padding: 20px;
       width: 100%;
-      display: block;
-      box-sizing: border-box;
+      display: block; 
+      box-sizing: border-box; 
       margin-left: 0;
       margin-right: 0;
 
     }
     .titulo {
       font-family: 'Montserrat', sans-serif;
-      font-weight: 700;
+      font-weight: 700; 
       font-size: 50px;
       color: var(--azul-hover);
       margin-bottom: 20px;
@@ -117,27 +114,27 @@
     .Pesquisa {
           background-color: var(--fundo-secundario);
           padding: 20px;
-
+         
           box-shadow: 0 8px 16px rgba(1, 34, 77, 0.781);
           column-count: 3; /* Número de colunas */
           column-gap: 25px; /* Espaço entre as colunas */
           font-family: 'Inter', sans-serif;  /* Define a fonte principal */
           font-size: 16px;                   /* Altera o tamanho da letra */
           line-height: 1.6;                  /* Melhora o espaçamento entre as linhas */
-          color: #c0bec0;
+          color: #c0bec0;                    
 
     }
     .primeiro-paragrafo{
-      background-color: var(--primeiro-paragrafo-fundo);
-
+      background-color: var(--primeiro-paragrafo-fundo);    
+   
       height: 400px;
       width: 350px;
       padding: 7px;
       border-radius: 5px;
       box-shadow: 0 4px 8px var(--sombra);
     }
-    .segundo-paragrafo{
-      background-color: var(--primeiro-paragrafo-fundo);
+    .segundo-paragrafo{ 
+      background-color: var(--primeiro-paragrafo-fundo);  
       margin: 5px 0;
       height: 400px;
       width: 350px;
@@ -147,7 +144,7 @@
     }
 
     .terceiro-paragrafo{
-      background-color: var(--primeiro-paragrafo-fundo);
+      background-color: var(--primeiro-paragrafo-fundo);    
       margin: 5px 0;
       height: 400px;
       width: 350px;
