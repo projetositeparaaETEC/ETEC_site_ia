@@ -3,62 +3,145 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Principais IAs</title>
+  <title>Principais IAs - Gazeta Tecnológica</title>
 
-  <link rel="stylesheet" type="text/css" href="css/style.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&family=Playfair+Display:ital,wght@0,700;0,900;1,400;1,700&family=PT+Serif:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/style_jornal.css"/>
 </head>
 <body>
-  <header class="cabecalho">
-    <h1>Por um banner</h1>
-    <link rel="preconnect" href="https://googleapis.com">
-    <link rel="preconnect" href="https://gstatic.com" crossorigin>
-    <link href="https://googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 
+  <header class="cabecalho">
+    <div class="cabecalho__barra-superior" role="region" aria-label="Informações da Edição">
+      <span>Edição Especial</span>
+      <span>Tecnologia & História</span>
+      <time datetime="2026">São Paulo, 1951</time>
+    </div>
+    
+    <h1 class="masthead">A Gazeta da Inteligência</h1>
+    <p class="subtitulo-jornal">Crônicas sobre o alvorecer e o futuro das mentes sintéticas</p>
+
+    <div class="cabecalho__barra-inferior" role="region" aria-label="Detalhes do Jornal">
+      <span>Fundada em 1920</span>
+      <span>Seção Especial de Pesquisa</span>
+      <span>Preço: R$ 0,00</span>
+    </div>
   </header>
 
-  <nav class="menu" aria-label="Navegação principal">
-    <a href="Pesquisa.docx" download>
-      <img src="Img/download.svg" alt="Parte para acesso da pesquisa">
+  <nav class="menu" aria-label="Navegação principal"> 
+    <a href="Pesquisa.docx" download class="menu__link">
+      <img src="Img/download.svg" alt="" aria-hidden="true">
+      Baixar Pesquisa (.docx)
     </a>
+      
   </nav>
 
   <main>
-    <details>
-    <summary><h2 class="titulo">Origem das IAS</h2> </summary>
-    
-    
-        <section class="Pesquisa"> 
-                  <section class="primeiro-paragrafo">
-                      <p align="justify">
-                          A história da inteligência artificial (IA)
-                          remonta à década de 1950, quando os primeiros pesquisadores começaram a explorar a ideia de criar máquinas capazes de simular a inteligência humana. O termo "inteligência artificial" foi cunhado em 1956 por John McCarthy durante a conferência de Dartmouth, que é considerada o ponto de partida oficial do campo da IA.
-                          Nos anos seguintes, houve avanços significativos na pesquisa em IA, com o desenvolvimento de algoritmos e técnicas para resolver problemas específicos. 
-                    </p>
-                </section>
-                  <section class="segundo-paragrafo">        
-                        <p align="justify">
-                            No entanto, o progresso foi lento devido às limitações computacionais da época e à falta de dados disponíveis para treinar os modelos.
-                            Durante as décadas de 1970 e 1980, a IA passou por um período conhecido como "inverno da IA", caracterizado por expectativas não atendidas e cortes de financiamento. No entanto, a pesquisa continuou em áreas como redes neurais e aprendizado de máquina.
-                            A partir dos anos 1990, com o aumento do poder computacional e a disponibilidade de grandes conjuntos de dados, a IA começou a ganhar impulso novamente. 
-                        </p>
-                  </section>
-                  <section class="terceiro-paragrafo">
-                        <p align="justify">
-                            O desenvolvimento de algoritmos mais sofisticados, como redes neurais profundas (deep learning), levou a avanços significativos em áreas como reconhecimento de imagem, processamento de linguagem natural e jogos.
-                            Nos últimos anos, a IA tem se tornado cada vez mais presente em nossas vidas, com aplicações em assistentes virtuais, carros autônomos, diagnósticos médicos e muito mais. A pesquisa continua avançando rapidamente, com novas técnicas e abordagens sendo exploradas para tornar a IA ainda mais poderosa e útil.
-                        </p>
-                  </section>
-        </section>
+    <article>
+      <details open>
+        <summary>
+          <p class="editoria">Especial / Tecnologia</p>
+          <h2 class="titulo">A Origem e a Evolução das IAs</h2>
+        </summary>
+
+        <p class="linha-fina">
+          De conjecturas matemáticas nos anos 50 ao domínio global do aprendizado profundo: como a humanidade criou máquinas que pensam.
+        </p>
+
+        <div class="ficha-materia">
+          Por <span class="ficha-materia__local">Redação</span>
+          <span class="ficha-materia__separador">/</span> 
+          Publicado em <time class="ficha-materia__local" datetime="2026-03-04">Especial Digital</time>
+        </div>
         
-   
-    </details>
-</main>
+        <div class="Pesquisa"> 
+          <div class="corpo-materia">
+            <section class="primeiro-paragrafo">
+              <header>
+                <h3>Os Primeiros Passos</h3>
+              </header>
+              <p>
+                A história da inteligência artificial (IA) remonta à década de 1950, quando os primeiros pesquisadores começaram a explorar a ideia de criar máquinas capazes de simular a inteligência humana. O termo "inteligência artificial" foi cunhado em 1956 por John McCarthy durante a conferência de Dartmouth, que é considerada o ponto de partida oficial do campo da IA. Nos anos seguintes, houve avanços significativos na pesquisa em IA, com o desenvolvimento de algoritmos e técnicas para resolver problemas específicos.
+              </p>
+            </section>
+
+            <figure class="citacao-destaque">
+              <blockquote>
+                "A IA não é mais uma promessa distante; ela molda o tecido do nosso cotidiano moderno."
+              </blockquote>
+              <figcaption class="citacao-destaque__fonte">Canais da Computação</figcaption>
+            </figure>
+                
+            <section class="segundo-paragrafo">
+              <header>
+                <h3>O Inverno e a Retomada</h3>
+              </header>
+              <p>
+                No entanto, o progresso foi lento devido às limitações computacionais da época e à falta de dados disponíveis para treinar os modelos. Durante as décadas de 1970 e 1980, a IA passou por um período conhecido como "inverno da IA", caracterizado por expectativas não atendidas e cortes de financiamento. No entanto, a pesquisa continuou em áreas como redes neurais e aprendizado de máquina. A partir dos anos 1990, com o aumento do poder computacional e a disponibilidade de grandes conjuntos de dados, a IA começou a ganhar impulso novamente.
+              </p>
+            </section>
+                
+            <section class="terceiro-paragrafo">
+              <header>
+                <h3>A Era do Deep Learning</h3>
+              </header>
+              <p>
+                O desenvolvimento de algoritmos mais sofisticados, como redes neurais profundas (deep learning), levou a avanços significativos em áreas como reconhecimento de imagem, processamento de linguagem natural e jogos. Nos últimos anos, a IA tem se tornado cada vez mais presente em nossas vidas, com aplicações em assistentes virtuais, carros autônomos, diagnósticos médicos e muito mais. A pesquisa continua avançando rapidamente, com novas técnicas e abordagens sendo exploradas para tornar a IA ainda mais poderosa e útil.
+              </p>
+            </section>
+          </div>
+
+          <aside class="caixa-lateral" aria-label="Informações complementares">
+            <section class="caixa">
+              <h3 class="caixa__titulo">Marcos Históricos</h3>
+              <ul class="linha-do-tempo">
+                <li>
+                  <time class="linha-do-tempo__ano" datetime="1950">1950</time>
+                  Teste de Turing proposto por Alan Turing.
+                </li>
+                <li>
+                  <time class="linha-do-tempo__ano" datetime="1956">1956</time>
+                  Conferência de Dartmouth (nascimento do termo).
+                </li>
+                <li>
+                  <time class="linha-do-tempo__ano" datetime="1997">1997</time>
+                  Deep Blue vence o campeão mundial de xadrez.
+                </li>
+              </ul>
+            </section>
+
+            <section class="caixa">
+              <h3 class="caixa__titulo">Pioneiros</h3>
+              <dl class="perfis">
+                <div class="perfis__item">
+                  <dt>John McCarthy</dt>
+                  <dd>Cunhou o termo Inteligência Artificial.</dd>
+                </div>
+                <div class="perfis__item">
+                  <dt>Alan Turing</dt>
+                  <dd>Pai da computação e pioneiro em testes de inteligência.</dd>
+                </div>
+              </dl>
+            </section>
+          </aside>
+        </div>
+      </details>
+    </article>
+  </main>
 
   <footer class="rodape">
-    <p>Contato</p>
-    <a href="mailto:etecprojinfo@gmail.com" aria-label="Enviar e-mail">
-      <img src="Img/email.svg" alt="E-mail">
-    </a>
+    <div>
+      <h3 class="rodape__titulo">Gazeta Tecnológica</h3>
+      <p>Desenvolvido para fins educacionais e de pesquisa.</p>
+    </div>
+    <address style="display: contents;">
+      <a href="mailto:etecprojinfo@gmail.com" aria-label="Enviar e-mail para etecprojinfo@gmail.com" class="rodape__contato">
+        <img src="Img/email.svg" alt="" aria-hidden="true">
+        etecprojinfo@gmail.com
+      </a>
+    </address>
   </footer>
+
 </body>
 </html>

@@ -293,7 +293,7 @@ cite { font-style: italic; }
   gap: 8px;
   text-decoration: none;
   color: var(--tinta);
-  font-size: 0.9rem;
+  font-size: 0.9rem; 
 }
 
 .rodape__contato img { width: 18px; height: 18px; }
