@@ -1,0 +1,299 @@
+:root {
+  --papel: #EFE9DA;
+  --papel-caixa: #E7E0CC;
+  --tinta: #201B14;
+  --tinta-suave: #4A4238;
+  --vinho: #7A1F1F;
+  --linha: #201B14;
+  --largura-maxima: 1180px;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--papel);
+  color: var(--tinta);
+  font-family: 'PT Serif', 'Old Standard TT', Georgia, serif;
+  line-height: 1.6;
+}
+
+.cabecalho {
+  max-width: var(--largura-maxima);
+  margin: 0 auto;
+  padding: 18px 24px 0;
+}
+
+.cabecalho__barra-superior,
+.cabecalho__barra-inferior {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 8px;
+  font-family: 'Old Standard TT', Georgia, serif;
+  font-size: 0.78rem;
+  letter-spacing: 0.03em;
+  color: var(--tinta-suave);
+}
+
+.cabecalho__barra-inferior {
+  border-top: 2px solid var(--linha);
+  border-bottom: 4px double var(--linha);
+  padding: 6px 0;
+  margin-top: 14px;
+}
+
+.masthead {
+  text-align: center;
+  font-family: 'Playfair Display', Georgia, serif;
+  font-weight: 900;
+  font-size: clamp(2.6rem, 7vw, 5rem);
+  margin: 8px 0 4px;
+  letter-spacing: 0.01em;
+}
+
+.subtitulo-jornal {
+  text-align: center;
+  font-style: italic;
+  color: var(--tinta-suave);
+  margin: 0 0 10px;
+  font-size: 1.05rem;
+}
+
+.menu {
+  max-width: var(--largura-maxima);
+  margin: 0 auto;
+  padding: 10px 24px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.menu__link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  color: var(--tinta);
+  border: 1px solid var(--tinta);
+  padding: 6px 14px;
+  font-family: 'Old Standard TT', Georgia, serif;
+  font-size: 0.85rem;
+  transition: background 0.15s ease, color 0.15s ease;
+}
+
+.menu__link img { width: 16px; height: 16px; }
+
+.menu__link:hover {
+  background: var(--tinta);
+  color: var(--papel);
+}
+
+main {
+  max-width: var(--largura-maxima);
+  margin: 0 auto;
+  padding: 0 24px 40px;
+}
+
+details {
+  border-top: 6px double var(--linha);
+  padding-top: 18px;
+}
+
+summary {
+  cursor: pointer;
+  list-style: none;
+  margin-bottom: 8px;
+}
+
+summary::-webkit-details-marker { display: none; }
+
+.editoria {
+  font-family: 'Old Standard TT', Georgia, serif;
+  text-transform: uppercase;
+  font-size: 0.78rem;
+  letter-spacing: 0.12em;
+  color: var(--vinho);
+  margin: 0 0 6px;
+}
+
+.titulo {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-weight: 700;
+  font-size: clamp(1.9rem, 4.2vw, 3rem);
+  line-height: 1.1;
+  margin: 0 0 10px;
+}
+
+.linha-fina {
+  font-style: italic;
+  font-size: 1.15rem;
+  color: var(--tinta-suave);
+  border-left: 3px solid var(--vinho);
+  padding-left: 14px;
+  margin: 0 0 18px;
+  max-width: 62ch;
+}
+
+.ficha-materia {
+  font-family: 'Old Standard TT', Georgia, serif;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--tinta-suave);
+  border-top: 1px solid var(--linha);
+  border-bottom: 1px solid var(--linha);
+  padding: 6px 0;
+  margin-bottom: 22px;
+}
+
+.ficha-materia__local { font-weight: 700; color: var(--tinta); }
+.ficha-materia__separador { margin: 0 6px; }
+
+.Pesquisa {
+  display: grid;
+  grid-template-columns: minmax(0, 2.2fr) minmax(240px, 1fr);
+  gap: 40px;
+  align-items: start;
+}
+
+.corpo-materia {
+  column-count: 1;
+}
+
+@media (min-width: 780px) {
+  .corpo-materia { column-count: 2; column-gap: 32px; }
+}
+
+.corpo-materia section p {
+  margin: 0 0 1em;
+  font-size: 1.02rem;
+  hyphens: auto;
+}
+
+.primeiro-paragrafo p::first-letter {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-weight: 900;
+  font-size: 3.6em;
+  float: left;
+  line-height: 0.82;
+  padding: 4px 8px 0 0;
+  color: var(--vinho);
+}
+
+cite { font-style: italic; }
+
+.citacao-destaque {
+  break-inside: avoid;
+  margin: 6px 0 22px;
+  padding: 14px 0;
+  border-top: 2px solid var(--linha);
+  border-bottom: 2px solid var(--linha);
+  font-family: 'Playfair Display', Georgia, serif;
+  font-style: italic;
+  font-size: 1.3rem;
+  line-height: 1.4;
+  text-align: center;
+}
+
+.citacao-destaque__fonte {
+  display: block;
+  margin-top: 10px;
+  font-family: 'Old Standard TT', Georgia, serif;
+  font-style: normal;
+  font-size: 0.75rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--tinta-suave);
+}
+
+.caixa-lateral {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.caixa {
+  background: var(--papel-caixa);
+  border: 1px solid var(--linha);
+  padding: 16px 18px;
+}
+
+.caixa__titulo {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 1.05rem;
+  margin: 0 0 10px;
+  padding-bottom: 8px;
+  border-bottom: 2px solid var(--vinho);
+}
+
+.linha-do-tempo {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.linha-do-tempo li {
+  padding: 8px 0;
+  border-top: 1px dotted var(--tinta-suave);
+  font-size: 0.92rem;
+}
+
+.linha-do-tempo li:first-child { border-top: none; }
+
+.linha-do-tempo__ano {
+  display: block;
+  font-family: 'Old Standard TT', Georgia, serif;
+  font-weight: 700;
+  color: var(--vinho);
+}
+
+.perfis { margin: 0; }
+
+.perfis__item { margin-bottom: 12px; }
+
+.perfis__item dt {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-weight: 700;
+  font-size: 0.98rem;
+}
+
+.perfis__item dd {
+  margin: 2px 0 0;
+  font-size: 0.88rem;
+  color: var(--tinta-suave);
+}
+
+@media (max-width: 779px) {
+  .Pesquisa { grid-template-columns: 1fr; }
+}
+
+.rodape {
+  max-width: var(--largura-maxima);
+  margin: 0 auto;
+  padding: 20px 24px 40px;
+  border-top: 6px double var(--linha);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.rodape__titulo {
+  font-family: 'Playfair Display', Georgia, serif;
+  margin: 0 0 4px;
+  font-size: 1.1rem;
+}
+
+.rodape p { margin: 0; color: var(--tinta-suave); font-size: 0.9rem; }
+
+.rodape__contato {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  color: var(--tinta);
+  font-size: 0.9rem; 
+}
+
+.rodape__contato img { width: 18px; height: 18px; }

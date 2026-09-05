@@ -1,0 +1,265 @@
+ :root {
+      --fundo: #07111F;
+      --fundo-secundario: #0D1B2A;
+      --texto: #e3ebf3;
+      --texto-secundario: #9DB7D1;
+      --azul-destaque: #36A3FF;   
+      --azul-hover: #55B7FF;
+      --borda: #244766;
+      --sombra: rgba(13, 92, 116, 0.781);
+      --primeiro-paragrafo-fundo: #001124;
+      --segundo-paragrafo-fundo: #01172e;
+      --terceiro-paragrafo-fundo: #001b38;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html, body {
+    margin: 0;
+    min-height: 100%;
+}
+
+    body {
+        margin: 0;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        background-color: var(--fundo);
+        background-image: url('../Img/fundoteste.jpg');
+        background-repeat: repeat;
+        color: var(--texto);
+        font-family: Arial, sans-serif;
+    }
+
+    .cabecalho {
+      padding: 20px 8%;
+      background-color: var(--fundo-secundario);
+      border-bottom: 1px solid var(--borda);
+      text-align: center;
+    }
+
+    .cabecalho h1 {
+      margin: 0;
+      color: var(--azul-destaque);
+      font-size: 32px;
+    }
+
+    .menu {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      background-image: url('../Img/fundosegundario.png');
+      
+      width: 100%;          
+      max-width: none;       
+      margin: 0;      
+      padding: 10px 8%;            
+      box-shadow: 0 4px 8px var(--sombra);
+    
+      justify-content: flex-start; 
+    }   
+
+    .menu a {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+  
+      text-decoration: none;
+     
+    }
+
+    .menu a:hover {
+      color: var(--azul-hover);
+    }
+
+    .menu img,
+    .rodape img {
+      width: 35px;
+      height: 35px;
+    }
+
+    main {
+        flex: 1;
+      width: 84%;
+      max-width: 1100px;
+      min-height: 300px;
+      margin: 0 auto;
+      padding: 70px 0;
+      text-align: center;
+    }
+
+    main h2 {
+      margin: 0;
+      font-size: 40px;
+    }
+    nav {
+      background-color: #0e2844;
+      padding: 20px;
+      width: 100%;
+      display: block; 
+      box-sizing: border-box; 
+      margin-left: 0;
+      margin-right: 0;
+
+    }
+    .titulo {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 700; 
+      font-size: 50px;
+      color: var(--azul-hover);
+      margin-bottom: 20px;
+    }
+    .Pesquisa {
+          background-color: var(--fundo-secundario);
+          padding: 20px;
+         
+          box-shadow: 0 8px 16px rgba(1, 34, 77, 0.781);
+          column-count: 3; /* Número de colunas */
+          column-gap: 25px; /* Espaço entre as colunas */
+          font-family: 'Inter', sans-serif;  /* Define a fonte principal */
+          font-size: 16px;                   /* Altera o tamanho da letra */
+          line-height: 1.6;                  /* Melhora o espaçamento entre as linhas */
+          color: #c0bec0;                    
+
+    }
+    .primeiro-paragrafo{
+      background-color: var(--primeiro-paragrafo-fundo);    
+   
+      height: 400px;
+      width: 350px;
+      padding: 7px;
+      border-radius: 5px;
+      box-shadow: 0 4px 8px var(--sombra);
+    }
+    .segundo-paragrafo{ 
+      background-color: var(--primeiro-paragrafo-fundo);  
+      margin: 5px 0;
+      height: 400px;
+      width: 350px;
+      padding: 7px;
+      border-radius: 5px;
+      box-shadow: 0 4px 8px var(--sombra);
+    }
+
+    .terceiro-paragrafo{
+      background-color: var(--primeiro-paragrafo-fundo);    
+      margin: 5px 0;
+      height: 400px;
+      width: 350px;
+      padding: 7px;
+      border-radius: 5px;
+      box-shadow: 0 4px 8px var(--sombra);
+    }
+
+    .rodape {
+         margin-top: auto;
+      padding: 25px;
+      background-color: var(--fundo-secundario);
+      border-top: 1px solid var(--borda);
+      color: var(--texto-secundario);
+      text-align: center;
+      background-image: url('../Img/fundosegundario.png');
+    }
+    details summary::-webkit-details-marker {
+  display: none;
+}
+    .rodape p {
+      margin: 0 0 12px;
+    }
+
+    .rodape a {
+      display: inline-block;
+    }
+
+    /* ===================================================================
+       EFEITO DE CIRCUITOS ELÉTRICOS NO FUNDO
+
+       =================================================================== */
+
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      z-index: 0;
+      pointer-events: none;
+      opacity: 0.55;
+      mix-blend-mode: screen;
+      background-repeat: repeat;
+      background-size: 200px 200px;
+      background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='200' height='200' viewBox='0 0 200 200'><defs><style>.trace{fill:none;stroke:%23244766;stroke-width:2;}.pulse{fill:none;stroke:%2336A3FF;stroke-width:2;stroke-linecap:round;stroke-dasharray:6 14;}.node{fill:%2336A3FF;opacity:.6;}</style></defs><path class='trace' d='M0,40H60V100H140V40H200'/><path class='trace' d='M20,0V60H100V160H160V200'/><path class='trace' d='M0,150H30V190H0'/><path class='trace' d='M170,0V30H200'/><path class='pulse' d='M0,40H60V100H140V40H200'><animate attributeName='stroke-dashoffset' from='0' to='-40' dur='2.4s' repeatCount='indefinite'/></path><path class='pulse' d='M20,0V60H100V160H160V200'><animate attributeName='stroke-dashoffset' from='0' to='40' dur='3.1s' repeatCount='indefinite'/></path><circle class='node' cx='60' cy='40' r='3'><animate attributeName='opacity' values='.4;1;.4' dur='2.4s' repeatCount='indefinite'/></circle><circle class='node' cx='140' cy='100' r='3'><animate attributeName='opacity' values='.4;1;.4' dur='2.4s' begin='0.6s' repeatCount='indefinite'/></circle><circle class='node' cx='100' cy='60' r='3'><animate attributeName='opacity' values='.4;1;.4' dur='3.1s' repeatCount='indefinite'/></circle><circle class='node' cx='160' cy='160' r='3'><animate attributeName='opacity' values='.4;1;.4' dur='3.1s' begin='0.8s' repeatCount='indefinite'/></circle></svg>");
+      animation: circuito-deriva 40s linear infinite;
+      filter: brightness(1);
+      transition: filter 0.6s ease, opacity 0.6s ease;
+    }
+
+    /* mantém o conteúdo real acima da camada de circuitos */
+    .cabecalho, .menu, main, nav, .rodape {
+      position: relative;
+      z-index: 1;
+    }
+
+    @keyframes circuito-deriva {
+      0%   { background-position: 0 0; }
+      100% { background-position: 400px 200px; }
+    }
+
+   
+    body:has(.menu a:hover)::before,
+    body:has(nav a:hover)::before {
+      filter: brightness(1.9) saturate(1.3);
+      opacity: 0.8;
+      animation-duration: 12s;
+    }
+
+    
+    .primeiro-paragrafo,
+    .segundo-paragrafo,
+    .terceiro-paragrafo {
+      position: relative;
+      overflow: hidden;
+      isolation: isolate;
+      transition: box-shadow 0.4s ease, transform 0.4s ease;
+    }
+
+    .primeiro-paragrafo::after,
+    .segundo-paragrafo::after,
+    .terceiro-paragrafo::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      z-index: -1;
+      border-radius: inherit;
+      background:
+        linear-gradient(90deg, transparent 0 6px, var(--azul-destaque) 6px 8px, transparent 8px 100%) 0 12px / 100% 20px repeat-y,
+        linear-gradient(0deg,  transparent 0 6px, var(--azul-destaque) 6px 8px, transparent 8px 100%) 12px 0 / 20px 100% repeat-x;
+      opacity: 0;
+      transition: opacity 0.4s ease;
+    }
+
+    .primeiro-paragrafo:hover,
+    .segundo-paragrafo:hover,
+    .terceiro-paragrafo:hover {
+      box-shadow: 0 0 18px 2px var(--azul-destaque), 0 4px 8px var(--sombra);
+      transform: translateY(-2px);
+    }
+
+    .primeiro-paragrafo:hover::after,
+    .segundo-paragrafo:hover::after,
+    .terceiro-paragrafo:hover::after {
+      opacity: 0.35;
+      animation: circuito-deriva 3s linear infinite;
+    }
+
+    
+    @media (prefers-reduced-motion: reduce) {
+      body::before {
+        animation: none;
+      }
+      .primeiro-paragrafo:hover::after,
+      .segundo-paragrafo:hover::after,
+      .terceiro-paragrafo:hover::after {
+        animation: none;
+      }
+    }
