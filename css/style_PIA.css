@@ -1,0 +1,11 @@
+body {
+    background-color: #bebebe;
+    margin: 1.4em 2rem;
+}
+
+header {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 10px;
+    display: flex;
+    background-color: #acacac;
+}

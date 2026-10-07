@@ -396,13 +396,12 @@ cite { font-style: italic; }
   border-left: 3px double var(--linha);
 }
 
-.sublinhado{
+.marca-texto{
   background: rgba(118, 43, 36, 0.13);
   color: inherit;
 }
 .caixa {
   padding: 0 0 16px;
-  border-bottom: 1px solid rgba(41, 35, 25, 0.55);
 }
 
 .caixa__titulo {
