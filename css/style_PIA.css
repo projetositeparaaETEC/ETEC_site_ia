@@ -4,8 +4,8 @@ body {
 }
 
 header {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     padding: 10px;
     display: flex;
-    gap: space-between;
-    background-color: #cacaca;
+    background-color: #acacac;
 }
