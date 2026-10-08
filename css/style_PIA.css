@@ -1,11 +1,15 @@
 body {
     background-color: #bebebe;
-    margin: 1.4em 2rem;
 }
 
 header {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    padding: 10px;
-    display: flex;
-    background-color: #acacac;
+    background-color: #f2f2f2;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    border-top: 5px solid #7a0101;
+    box-shadow: 0 0 5px;
 }
