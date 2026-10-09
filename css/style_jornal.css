@@ -445,14 +445,12 @@ cite { font-style: italic; }
 
 .perfis {
   margin: 0;
-  counter-reset: pioneiro;
 }
 
 .perfis__item {
   margin-bottom: 12px;
   padding-top: 9px;
   border-top: 1px dotted var(--tinta-suave);
-  counter-increment: pioneiro;
 }
 
 .perfis__item:first-child { border-top: 0; }
@@ -464,16 +462,8 @@ cite { font-style: italic; }
   line-height: 1.25;
 }
 
-.perfis__item dt::before {
-  content: '0' counter(pioneiro) ' / ';
-  font-family: 'Old Standard TT', Georgia, serif;
-  font-size: 0.7rem;
-  font-weight: 400;
-  color: var(--vinho);
-}
-
 .perfis__item dd {
-  margin: 3px 0 0 2.1rem;
+  margin: 3px 0 0 0;
   font-size: 0.88rem;
   color: var(--tinta-suave);
   line-height: 1.45;
