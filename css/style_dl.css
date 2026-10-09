@@ -70,6 +70,35 @@ body {
     color: #def;
 }
 
+.flutuante {
+    position: absolute;
+    top: 50px;
+    right: 150px;
+    max-width: 260px;
+    padding: 12px;
+    border-radius: 15px;
+    background-color: var(--fundo);
+    color: #456;
+}
+
+.flutuante h2 {
+    font-size: 20px;
+}
+
+.flutuante section {
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.flutuante #principal {
+    background-color: #ddeef6;
+}
+
+.flutuante #extra {
+    margin-top: 12px;
+    background-color: #eee;
+}
+
 .caixa {
     background-color: var(--fundo-caixas);
     border-radius: 8px;
