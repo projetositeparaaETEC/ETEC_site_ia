@@ -1,0 +1,150 @@
+/* Importa a fonte do Google */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+body {
+    background: linear-gradient(to bottom, #d0eff5, #ffffff);
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding-top: 80px;
+    /* Espaço para o cabeçalho fixo */
+}
+
+#cabecalho {
+    box-shadow: 1px 1px 1px 1px #8fb7c0;
+    background-color: #d0eff5;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    box-sizing: border-box;
+    /* Garante que o padding não estoure a largura */
+}
+
+#botao_menu {
+    border: none;
+    background: transparent;
+    width: 20px;
+    height: 20px;
+    padding: 0;
+    cursor: pointer;
+    margin-right: 30px;
+}
+
+#botao_menu:hover .icone_menu {
+    opacity: 0.8;
+}
+
+.icone_menu {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+#arealogo {
+    margin: 0px;
+    display: flex;
+    align-items: center;
+    padding: 0px;
+}
+
+.logo {
+    width: 60px;
+    height: 60px;
+    margin: 0px;
+    padding: 0px;
+}
+
+#nome_logo {
+    font-size: 40px;
+}
+
+#titulo_principal {
+    text-align: center;
+    font-size: 80px;
+    margin-top: 150px;
+    color: #333;
+    font-family: 'Inter', monospace;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid #333;
+    width: 16ch;
+    margin-left: auto;
+    margin-right: auto;
+    animation:
+        digitar 3s steps(16, end),
+        piscar-cursor 0.75s step-end infinite;
+}
+
+@keyframes digitar {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 16ch;
+    }
+}
+
+@keyframes piscar-cursor {
+
+    from,
+    to {
+        border-color: transparent;
+    }
+
+    50% {
+        border-color: #333;
+    }
+}
+
+#caixa {
+    display: flex;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 10px;
+    background-color: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 2px 4px rgba(144, 16, 243, 0.1);
+}
+
+#texto_caixa {
+    font-size: 18px;
+    color: #182d33;
+    line-height: 1.6;
+    margin-left: 20px;
+}
+
+#pesquisas {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    width: 400px;
+    margin-top: 200px;
+    margin-left: 60px;
+}
+
+
+.titulo_pesquisas {
+    font-weight: 550;
+    font-size: 40px;
+    margin: 0;
+    padding: 0;
+    color: #000000;
+    margin-bottom: 10px;
+}
+.conteudo{
+    font-size: 18px;
+    color: #000000;
+    line-height: 1.8;
+    text-align: left;
+}
