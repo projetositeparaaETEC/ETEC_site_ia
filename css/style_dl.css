@@ -30,17 +30,20 @@ body {
 }
 
 .cabecalho {
-    background: linear-gradient(to right, var(--fundo-banner), #1a75bb);
-    padding: 15px 25px;
+    background: #59b url("https://web.archive.org/web/20100722014630im_/http://s.twimg.com/a/1279750718/images/fronts/twitter-sun.gif") no-repeat 50% 0;
+    padding: 30px 150px 5px 150px;
     color: #ffffff;
 }
 
 .topo { 
     display: flex;
     align-items: center;
-    justify-content: space-between;
     flex-wrap: wrap;
-    gap: 15px;
+    gap: 25px;
+}
+
+#logo {
+    width: 330px;
 }
 
 .menu {
@@ -49,11 +52,12 @@ body {
     align-items: center;
     flex-wrap: wrap;
     min-height: 40px;
-    padding: 10px 20px;
+    padding-left: 150px;
+    padding-right: 150px;
 }
 
 .menu a {
-    color: #999fa8;
+    color: #6ac;
     text-decoration: none;
     margin-right: 15px;
     padding: 8px 12px;
@@ -63,6 +67,7 @@ body {
 .menu a:hover {
     background-color: rgba(255, 255, 255, 0.2);
     border-radius: 4px;
+    color: #def;
 }
 
 .caixa {
@@ -120,27 +125,34 @@ body {
 
 .frase-banner {
     color: #c9e9f7;
-    font-size: 24px;
+    font-size: 20px;
     font-weight: bold;
     text-align: left;
-    margin-top: 5px;
+    margin-top: 10px;
 }
 
 .container-pesquisa {
     position: relative;
     display: inline-block;
     width: 100%;
-    max-width: 440px;
+    max-width: 340px;
+    opacity: 50%;
+    transition: opacity 0.4s;
+}
+
+.container-pesquisa:hover {
+    opacity: 100%;
 }
 
 .barra-pesquisa {
     font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
     padding: 5px 40px 5px 10px;
-    border-radius: 4px;
+    border-radius: 5px;
     border: none;
-    height: 35px;
+    height: 32px;
     width: 100%;
-    background: linear-gradient(to right, #bcd7e5, #dddcdc);
+    background: #fff;
     color: var(--texto-segundario);
     box-sizing: border-border-box;
 }
@@ -152,11 +164,10 @@ body {
     top: 1px;
     bottom: 1px;
     padding: 0 15px;
-    background: linear-gradient(to left, #fcfcfc, #dddcdc);
+    background: linear-gradient(to bottom, #fff, #ccc);
     border-radius: 0 3px 3px 0;
     color: #333333;
-    font-size: 12px;
-    font-weight: bold;
+    font-size: 14px;
     cursor: pointer;
     border: none;
 }
