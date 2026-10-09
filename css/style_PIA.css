@@ -5,11 +5,30 @@ body {
 header {
     background-color: #f2f2f2;
 
+    padding: 0.5%;
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     z-index: 1000;
-    border-top: 5px solid #7a0101;
+    border-top: 5px solid #860000;
     box-shadow: 0 0 5px;
+}
+
+main{
+    top: clamp(1.5rem, 5vw, 3rem);
+    margin: 0 1rem;
+    background: #fff3ec;
+}
+
+#titulo_main{
+    padding: 10px;
+    text-align: center;
+    position: relative;  
+    
+}
+
+#foto_turing{
+    width: 100%;
+    object-fit: cover;
 }
