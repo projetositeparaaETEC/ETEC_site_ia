@@ -1,8 +1,8 @@
 /* Importa a fonte do Google */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+@import url('https://googleapis.com');
 
 body {
-    background: linear-gradient(to bottom, #d0eff5, #ffffff);
+    background: linear-gradient(to bottom, #ffffff, #d3cfcf);
     font-family: 'Inter', sans-serif;
     margin: 0;
     padding: 0;
@@ -14,8 +14,8 @@ body {
 }
 
 #cabecalho {
-    box-shadow: 1px 1px 1px 1px #8fb7c0;
-    background-color: #d0eff5;
+    box-shadow: 1px 1px 30px 1px #5a5959;
+    background-color: #dae0e0;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -29,18 +29,36 @@ body {
     /* Garante que o padding não estoure a largura */
 }
 
-#botao_menu {
+/* ==========================================================================
+   CONFIGURAÇÃO DO MENU RETRÁTIL (CLIQUE CSS)
+   ========================================================================== */
+#navegacao {
     border: none;
     background: transparent;
-    width: 20px;
-    height: 20px;
+    width: 25px;
+    height: 25px;
     padding: 0;
     cursor: pointer;
     margin-right: 30px;
+    position: relative;
+    /* Serve de âncora para posicionar o menu suspenso */
 }
 
-#botao_menu:hover .icone_menu {
+#navegacao:hover .icone_menu {
     opacity: 0.8;
+}
+
+/* Esconde o checkbox real da tela */
+#menu_checkbox {
+    display: none;
+}
+
+/* Transforma o ícone do menu em área clicável */
+.menu_label {
+    cursor: pointer;
+    display: block;
+    width: 100%;
+    height: 100%;
 }
 
 .icone_menu {
@@ -48,6 +66,51 @@ body {
     height: 100%;
     display: block;
 }
+
+/* Estilização da caixa flutuante do menu */
+.menu-lista {
+    display: none;
+    /* Escondido por padrão */
+    list-style: none;
+    padding: 10px 0;
+    margin: 0;
+    position: absolute;
+    top: 40px;
+    /* Posiciona abaixo do cabeçalho */
+    right: 0;
+    /* Alinha na direita certinho */
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.15);
+    width: 180px;
+
+    z-index: 1100;
+
+}
+
+/* Estilo dos links do menu */
+.menu-lista li a {
+    display: block;
+    padding: 12px 20px;
+    text-decoration: none;
+    color: #333333;
+    font-size: 16px;
+    font-weight: 500;
+    transition: background-color 0.2s ease;
+}
+
+.menu-lista li a:hover {
+    background-color: #f0f2f2;
+    color: #000000;
+}
+
+/* GATILHO CSS: Quando o checkbox é clicado, abre o menu */
+#menu_checkbox:checked~.menu-lista {
+    display: block;
+}
+
+/* ========================================================================== */
 
 #arealogo {
     margin: 0px;
@@ -67,6 +130,7 @@ body {
     font-size: 40px;
 }
 
+/* EFEITO DIGITAR */
 #titulo_principal {
     text-align: center;
     font-size: 80px;
@@ -76,11 +140,11 @@ body {
     white-space: nowrap;
     overflow: hidden;
     border-right: 3px solid #333;
-    width: 16ch;
+    width: 21ch;
     margin-left: auto;
     margin-right: auto;
     animation:
-        digitar 3s steps(16, end),
+        digitar 3s steps(21, end),
         piscar-cursor 0.75s step-end infinite;
 }
 
@@ -90,11 +154,11 @@ body {
     }
 
     to {
-        width: 16ch;
+        width: 21ch;
     }
 }
 
-@keyframes piscar-cursor {
+@keyframes pIscar-cursor {
 
     from,
     to {
@@ -113,12 +177,12 @@ body {
     padding: 10px;
     background-color: #ffffff;
     border-radius: 20px;
-    box-shadow: 0 2px 4px rgba(144, 16, 243, 0.1);
+    box-shadow: 0px 10px 10px rgba(145, 16, 243, 0.37);
 }
 
 #texto_caixa {
     font-size: 18px;
-    color: #182d33;
+    color: #5a6163e1;
     line-height: 1.6;
     margin-left: 20px;
 }
@@ -128,11 +192,10 @@ body {
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
-    width: 400px;
-    margin-top: 200px;
-    margin-left: 60px;
+    width: 650px;
+    margin: 0;
+    padding: 20px;
 }
-
 
 .titulo_pesquisas {
     font-weight: 550;
@@ -142,9 +205,200 @@ body {
     color: #000000;
     margin-bottom: 10px;
 }
-.conteudo{
+
+.conteudo {
     font-size: 18px;
     color: #000000;
     line-height: 1.8;
     text-align: left;
+}
+
+#areaimagem {
+    margin: 0px;
+    padding: 0px;
+}
+
+.imagem {
+    border-radius: 50px 50px;
+    width: 550px;
+    padding: 30px;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+/* --- BASE COMUM PARA TODOS OS LAYOUTS --- */
+#layout,
+#layout_2,
+#layout_3,
+#layout_4,
+#layout_5,
+#layout_6,
+#layout_7,
+#layout_8,
+#layout_9 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+    margin-top: 100px;
+    padding: 60px 40px;
+    box-sizing: border-box;
+}
+
+/* --- BLOCO 1: Tema Google Gemini --- */
+#layout {
+    box-shadow: 0px -20px 30px 1px rgba(26, 115, 232, 0.575);
+    background-color: #1a1e29e0;
+}
+
+#layout .titulo_pesquisas,
+#layout .conteudo {
+    color: #f1f3f4;
+}
+
+#layout .imagem {
+    background: linear-gradient(135deg, #1a73e8, #7a22ff);
+    box-shadow: 0px 8px 50px rgba(122, 34, 255, 0.5);
+}
+
+/* --- BLOCO 2: Tema ChatGPT / OpenAI (Invertido) --- */
+#layout_2 {
+    box-shadow: 0px -10px 30px 1px rgba(16, 163, 127, 0.2);
+    background-color: #202123e3;
+    flex-direction: row-reverse;
+}
+
+#layout_2 .titulo_pesquisas,
+#layout_2 .conteudo {
+    color: #ececf1;
+}
+
+#layout_2 .imagem {
+    background: linear-gradient(135deg, #10a37f, #0d1117);
+    box-shadow: 0px 8px 50px rgba(16, 163, 127, 0.5);
+}
+
+/* --- BLOCO 3: Tema Claude / Anthropic --- */
+#layout_3 {
+    box-shadow: 0px -10px 30px 1px rgba(217, 119, 6, 0.2);
+    background-color: #fbfaf7e0;
+}
+
+#layout_3 .titulo_pesquisas,
+#layout_3 .conteudo {
+    color: #191919;
+}
+
+#layout_3 .imagem {
+    background: linear-gradient(135deg, #f8f7f6, #a8a5a1);
+    box-shadow: 0px 8px 50px rgba(107, 105, 103, 0.4);
+}
+
+/* --- BLOCO 4: Tema Microsoft Copilot (Invertido) --- */
+#layout_4 {
+    box-shadow: 0px -10px 30px 1px rgba(0, 120, 212, 0.3);
+    background-color: #f3f2f1e6;
+    flex-direction: row-reverse;
+}
+
+#layout_4 .titulo_pesquisas,
+#layout_4 .conteudo {
+    color: #323130;
+}
+
+#layout_4 .imagem {
+    background: linear-gradient(135deg, #0078d4, #e3008c, #ff8c00);
+    box-shadow: 0px 8px 60px rgba(0, 120, 212, 0.4);
+}
+
+/* --- BLOCO 5: Tema Meta AI --- */
+#layout_5 {
+    box-shadow: 0px -10px 30px 1px rgba(0, 129, 255, 0.4);
+    background-color: #060b1ae6;
+}
+
+#layout_5 .titulo_pesquisas,
+#layout_5 .conteudo {
+    color: #ffffff;
+}
+
+#layout_5 .imagem {
+    background: radial-gradient(circle, #0081ff, #002554);
+    box-shadow: 0px 0px 60px rgba(0, 129, 255, 0.7);
+}
+
+/* --- BLOCO 6: Tema Midjourney (Invertido) --- */
+#layout_6 {
+    box-shadow: 0px -10px 30px 1px #000000;
+    background-color: #0c0c0fe3;
+    flex-direction: row-reverse;
+}
+
+#layout_6 .titulo_pesquisas,
+#layout_6 .conteudo {
+    color: #dfdfdf;
+}
+
+#layout_6 .imagem {
+    background: linear-gradient(180deg, #24243e, #0f0c1b);
+    box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.1), 0px 10px 40px rgba(0, 0, 0, 0.8);
+}
+
+/* --- BLOCO 7: Tema Perplexity AI --- */
+#layout_7 {
+    box-shadow: 0px -10px 30px 1px rgba(34, 143, 143, 0.2);
+    background-color: #191c1dc2;
+}
+
+#layout_7 .titulo_pesquisas,
+#layout_7 .conteudo {
+    color: #e1e3e3;
+}
+
+#layout_7 .imagem {
+    background: linear-gradient(135deg, #228f8f, #134e4e);
+    box-shadow: 0px 8px 50px rgba(34, 143, 143, 0.5);
+}
+
+/* --- BLOCO 8: Tema DeepSeek (Invertido) --- */
+#layout_8 {
+    box-shadow: 0px -10px 30px 1px rgba(58, 110, 237, 0.3);
+    background-color: #ffffff;
+    flex-direction: row-reverse;
+}
+
+#layout_8 .titulo_pesquisas,
+#layout_8 .conteudo {
+    color: #1e293b;
+}
+
+#layout_8 .imagem {
+    background: linear-gradient(135deg, #030a1b, #051236);
+    box-shadow: 0px 10px 40px rgba(19, 39, 90, 0.877);
+}
+
+/* --- BLOCO 9: Tema Grok / xAI --- */
+#layout_9 {
+    box-shadow: 0px -10px 30px 1px rgba(255, 255, 255, 0.05);
+    background-color: #000000;
+}
+
+#layout_9 .titulo_pesquisas,
+#layout_9 .conteudo {
+    color: #ffffff;
+}
+
+#layout_9 .imagem {
+    background: linear-gradient(135deg, #111111, #222222);
+    border: 1px solid #333;
+    box-shadow: 0px 0px 40px rgba(255, 255, 255, 0.1);
+}
+
+#rodape {
+    text-align: center;
+    padding: 20px;
+    background-color: #dae0e0;
+    margin-top: auto;
+    border-top: 1px solid #ccc;
+    box-shadow: 1px -10px 30px 1px #5a5959;
 }

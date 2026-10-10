@@ -1,82 +1,11 @@
 body {
-    background-color: #c9ae8ba1;
+    background-color: #bebebe;
+    margin: 1.4em 2rem;
 }
 
-#cabecalho-principal {
-    background-color: #f2f2f2;
-
-    padding: 0.5%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 1000;
+header {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 10px;
     display: flex;
-    justify-content: space-between;
-    border-top: 4px solid #860000;
-    box-shadow: 0 0 5px #00000049;
-}
-
-main{
-    top: clamp(1.5rem, 5vw, 3rem);
-    margin: 0 clamp(1rem, 5vw, 2rem) 50px;
-    background: #fff3ec;
-    padding: 3rem 0;
-    box-shadow: 0 0 10px #00000049;
-    border: 2px solid #8f8f8f2a;
-}
-
-#foto_turing{
-    display: block;
-    width: 100%;
-    height: clamp(200px, 6vw, 300px);
-    object-fit: cover;
-    border-bottom: 2px solid #8f8f8f2a;
-}
-
-#botao_main{
-    padding: 0.7rem 20px;
-    text-align: center;
-    justify-self: start;
-    background-color: #860000;
-    white-space: nowrap;
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: clamp(0.5rem, 1vw, 1rem);
-    border-radius: 100px;
-    border: 2.5px solid #500000;
-    box-shadow: inset 0 0 5px #ffffff49;
-    text-shadow: 1.3px 1.3px 0.6px #000000a6;
-}
-
-#titulo_main{
-    text-align: center;
-    margin: 0;
-    font-family: "Domine", serif;
-    max-width: 100%;
-    font-weight: 500;
-}
-
-#cabecalho-main{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 1rem;
-    box-sizing: border-box;
-    background-color: #f0dec6c9;
-    padding: 0.5rem;
-    padding-top: 1rem;
-    padding-bottom: 1.25rem;
-    position: sticky;  
-    margin-bottom: 0;
-    border-bottom: 2px solid #8f8f8f2a;
-}
-
-main #secao_principal{
-    display: flex;
-    flex-direction: column;
-    max-width: 65%;
-    margin: 1rem;
-    padding: 1rem;
+    background-color: #acacac;
 }
