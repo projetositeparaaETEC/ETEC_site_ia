@@ -32,7 +32,6 @@ main{
     height: clamp(200px, 6vw, 300px);
     object-fit: cover;
     border-bottom: 2px solid #8f8f8f2a;
-    /* oi */
 }
 
 #botao_main{
