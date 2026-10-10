@@ -5,7 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style_chat.css">
-    <title>Chats</title>
+    <title>
+        Chatbots de Inteligência Artificial
+    </title>
+    <link rel="icon" href="Img/Logo-site/logo.png">
 </head>
 
 <body>
@@ -14,11 +17,27 @@
             <img src="Img/logo.png" alt="logo" class="logo">
             <span id="nome_logo">Chat</span>
         </figure>
-        <button id="botao_menu">
-            <nav id="navegacao">
+        <nav id="navegacao">
+            <!-- Checkbox oculto que controla o estado -->
+            <input type="checkbox" id="menu_checkbox">
+
+            <!-- Botão visual (ícone do hambúrguer) -->
+            <label for="menu_checkbox" class="menu_label">
                 <img src="Img/menu-hamburguer.svg" alt="icone menu" class="icone_menu">
-            </nav>
-        </button>
+            </label>
+
+            <!-- Lista movida para fora da label para funcionar corretamente -->
+            <ul class="menu-lista">
+                <li><a href="Index.html">1950</a></li>
+                <li><a href="ML.html">2000</a></li>
+                <li><a href="DL.html">2010</a></li>
+                <li><a href="PrincipaisIAs.html">2012</a></li>
+                <li><a href="#">2020</a></li>
+                <li><a href="SITETESTE.html">2026</a></li>
+                <li><a href="mailto:etecprojetoinfo@gmail.com">Contato</a></li>
+                <li><a href="Pesquisas/chats_ia.docx" download class="menu__link">Baixar pesquisa (.docx)</a></li>
+            </ul>
+        </nav>
     </header>
 
     <main>
@@ -30,7 +49,7 @@
             </p>
         </section>
 
-        <!-- Bloco 1 (Mantido original) -->
+        <!-- Bloco 1 -->
         <section id="layout">
             <section id="pesquisas">
                 <h2 class="titulo_pesquisas"> O que são chats de Inteligência Artificial? </h2>
@@ -45,7 +64,7 @@
             </figure>
         </section>
 
-        <!-- Bloco 2 (Mantido original) -->
+        <!-- Bloco 2 -->
         <section id="layout_2">
             <section id="pesquisas">
                 <h2 class="titulo_pesquisas"> Como funcionam os chats de Inteligência Artificial? </h2>
@@ -163,44 +182,17 @@
                 <h2 class="titulo_pesquisas"> IA e Machine Learning na prática </h2>
                 <p class="conteudo">
                     Sistemas de IA e Machine Learning conseguem aprender com as interações, identificar padrões e
-                    aperfeiçoar suas respostas. Eles podem ser utilizados em restaurantes para pedidos e entregas, sites
-                    para responder perguntas frequentes e pesquisas de análise de sentimentos.
-                </p>
-                <p class="conteudo">
-                    Quando o chatbot não consegue resolver uma solicitação, o usuário pode ser encaminhado para um
-                    atendente humano. A principal diferença para sistemas baseados em regras é que a IA consegue
-                    interpretar intenções, sentimentos e o contexto das conversas.
+                    aperfeiçoar suas respostas.
                 </p>
             </section>
             <figure class="areaimagem">
                 <img src="Img/deepseek.svg" class="imagem">
             </figure>
         </section>
-
-        <!-- Bloco 9: LLMs -->
-        <section id="layout_9">
-            <section id="pesquisas">
-                <h2 class="titulo_pesquisas"> Como funcionam as LLMs? </h2>
-                <p class="conteudo">
-                    As LLMs dividem os textos em tokens (palavras ou pontuações), onde cada um recebe uma representação
-                    numérica que indica seu significado. O modelo analisa os tokens anteriores e calcula qual é o
-                    próximo token mais provável, usando os contextos e os pesos de cada palavra.
-                </p>
-                <p class="conteudo">
-                    Esse processo se repete gerando o texto um token por vez, de forma semelhante ao preenchimento
-                    automático. Ou seja, ela prevê quais palavras fazem mais sentido em uma sequência, considerando o
-                    contexto enviado pelo usuário.
-                </p>
-            </section>
-            <figure class="areaimagem">
-                <img src="Img/grok.svg" class="imagem">
-            </figure>
-        </section>
-
     </main>
 
     <footer id="rodape">
-        rodape
+        <p>&copy; 2022 - Central de Conhecimento sobre Chatbots</p>
     </footer>
 </body>
 
