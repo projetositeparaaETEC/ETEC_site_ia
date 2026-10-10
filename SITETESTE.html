@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agente de IA</title>
+    <link rel="stylesheet" href="claude.css">
+    <link rel="icon" href="claudelogo2.webp">
+
+    <nav class="barramenu">
+        <figure class="logo">
+            <img src="claudelogo2.webp" height="40" width="40">
+            Claude
+        </figure>
+        <ul class="nav-links">
+            <li><a href="https://www.anthropic.com/">Criadores</a></li>
+            <li><a href="https://pt.wikipedia.org/wiki/Claude">Sobre</a></li>
+            <li><a href="https://claude.com/product/claude-code">Agente</a></li>
+            <li><a href="https://claude.com/">IA</a></li>
+        </ul>
+    </nav>
+    <header class="principal">
+        <img src="claudelogo.png" alt="Logo do Claude" height="200" width="200">
+        <h1 class="console-container">
+            <span id="texto"></span><span class="console-underscore">_</span>
+        </h1>
+    </header>
+
+<form class="textbar" onsubmit="return false">
+    <label class="textbar-sr" for="textbar-input">Mensagem para o Claude</label>
+    <textarea id="textbar-input" class="textbar-input" rows="1" placeholder="Como posso ajudar você hoje?"></textarea>
+
+    <div class="textbar-acoes">
+        <button type="button" class="textbar-btn textbar-btn-icone" aria-label="Adicionar arquivo">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true">
+                <path d="M12 5v14M5 12h14" />
+            </svg>
+        </button>
+
+        <div class="textbar-direita">
+            <button type="button" class="textbar-btn textbar-modelo" aria-label="Escolher modelo">
+                Sonnet 5.5
+                <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M6 9l6 6 6-6" />
+                </svg>
+            </button>
+
+            <button type="submit" class="textbar-btn textbar-enviar" aria-label="Enviar mensagem">
+                <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M12 19V5M5 12l7-7 7 7" />
+                </svg>
+            </button>
+        </div>
+    </div>
+</form>
+
+    <script>
+        const frases = [
+            "Claude - Um agente de IA revolucionário",
+            "Claude - Seu assistente inteligente",
+            "Claude - Feito pela Anthropic"
+        ];
+        const alvo = document.getElementById("texto");
+        let frase = 0, letra = 0, apagando = false;
+
+        function digitar() {
+            const atual = frases[frase];
+            alvo.textContent = atual.substring(0, letra);
+
+            let atraso = apagando ? 40 : 90;
+
+            if (!apagando && letra === atual.length) {
+                apagando = true;
+                atraso = 1500;            
+            } else if (apagando && letra === 0) {
+                apagando = false;
+                frase = (frase + 1) % frases.length;
+                atraso = 500;
+            } else {
+                letra += apagando ? -1 : 1;
+            }
+            setTimeout(digitar, atraso);
+        }
+        digitar();
+    </script>
+    <header class="Title2">
+        <h2>INTRODUÇÃO AO CLAUDE</h2>
+    </header>
+    <main class="TextoBalao1">
+        <img src="claudecode.webp" alt="Logo Claude Code" height="30" width="40">
+        <P style="color: #141413;">Olá, eu sou o Claude. Seu assistente de IA favorito! Venha embarcar numa jornada de aprendizado e conhecimento no mundo das IAs!</P>
+    </main>
+</body>
+</html>

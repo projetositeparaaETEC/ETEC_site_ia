@@ -379,7 +379,29 @@ body {
 .pesquisa ul {
     line-height: 1.7;
     color: #1a3a5c;
+
 }
+
+.robo{
+    display:flex;
+    
+}
+.robo img{
+    height:200px;
+    width:auto;
+    margin-right:10px;
+    margin-left:auto;
+    margin-top: auto;
+    margin-bottom:auto;
+    border-width: 5px;
+    border-style: double;
+    border-color: #c7e5f2;
+    background: #31536a;
+}
+
+
+
+
 
 
 /* =========================
