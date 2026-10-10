@@ -1,8 +1,8 @@
 body {
-    background-color: #bebebe;
+    background-color: #c9ae8ba1;
 }
 
-header {
+#cabecalho-principal {
     background-color: #f2f2f2;
 
     padding: 0.5%;
@@ -11,24 +11,46 @@ header {
     left: 0;
     width: 100%;
     z-index: 1000;
-    border-top: 5px solid #860000;
-    box-shadow: 0 0 5px;
+    display: flex;
+    justify-content: space-between;
+    border-top: 4px solid #860000;
+    box-shadow: 0 0 5px #00000049;
 }
 
 main{
     top: clamp(1.5rem, 5vw, 3rem);
-    margin: 0 1rem;
+    margin: 0 4rem;
     background: #fff3ec;
-}
-
-#titulo_main{
-    padding: 10px;
-    text-align: center;
-    position: relative;  
-    
+    padding: 3rem 0;
+    box-shadow: 0 0 10px #00000049;
 }
 
 #foto_turing{
+    display: block;
     width: 100%;
+    height: clamp(200px, 6vw, 300px);
     object-fit: cover;
+}
+
+#titulo_main{
+    text-align: center;  
+    margin-bottom: 2rem;
+    margin: 0 1.5rem;
+    font-family: "Domine", serif;
+}
+
+#cabecalho-main{
+    background-color: #f0dec6c9;
+    padding: 0.5rem;
+    margin: 0 0;
+    padding-top: 1rem;
+    padding-bottom: 1.25rem;
+    position: sticky;  
+    margin-bottom: 0;
+    
+}
+
+main section {
+    margin: 1rem;
+    padding: 1rem;
 }
