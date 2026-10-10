@@ -19,10 +19,11 @@ body {
 
 main{
     top: clamp(1.5rem, 5vw, 3rem);
-    margin: 0 4rem;
+    margin: 0 4rem 50px;
     background: #fff3ec;
     padding: 3rem 0;
     box-shadow: 0 0 10px #00000049;
+    border: 2px solid #8f8f8f2a;
 }
 
 #foto_turing{
@@ -30,27 +31,50 @@ main{
     width: 100%;
     height: clamp(200px, 6vw, 300px);
     object-fit: cover;
+    border-bottom: 2px solid #8f8f8f2a;
+}
+
+#botao_main{
+    padding: 0.7rem 20px;
+    text-align: center;
+    justify-self: start;
+    background-color: #860000;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 100px;
+    border: 2.5px solid #500000;
+    box-shadow: inset 0 0 5px #ffffff49;
+    text-shadow: 1.3px 1.3px 0.6px #000000a6;
 }
 
 #titulo_main{
-    text-align: center;  
-    margin-bottom: 2rem;
-    margin: 0 1.5rem;
+    text-align: center;
+    margin: 0;
     font-family: "Domine", serif;
+    max-width: 100%;
+    font-weight: 500;
 }
 
 #cabecalho-main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    box-sizing: border-box;
     background-color: #f0dec6c9;
     padding: 0.5rem;
-    margin: 0 0;
     padding-top: 1rem;
     padding-bottom: 1.25rem;
     position: sticky;  
     margin-bottom: 0;
-    
+    border-bottom: 2px solid #8f8f8f2a;
 }
 
-main section {
+main #secao_principal{
+    display: flex;
+    flex-direction: column;
+    max-width: 65%;
     margin: 1rem;
     padding: 1rem;
 }
