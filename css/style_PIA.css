@@ -19,7 +19,7 @@ body {
 
 main{
     top: clamp(1.5rem, 5vw, 3rem);
-    margin: 0 clamp(1rem, 5vw, 2rem) 50px;
+    margin: 0 clamp(0.6rem, 5vw, 2rem) 50px;
     background: #fff3ec;
     padding: 3rem 0;
     box-shadow: 0 0 10px #00000049;
@@ -32,7 +32,6 @@ main{
     height: clamp(200px, 6vw, 300px);
     object-fit: cover;
     border-bottom: 2px solid #8f8f8f2a;
-    /* oi */
 }
 
 #botao_main{
@@ -57,6 +56,22 @@ main{
     font-family: "Domine", serif;
     max-width: 100%;
     font-weight: 500;
+}
+
+ .navegacao a{
+    text-align: center;
+    justify-self: start;
+    background-color: #860000;
+    padding: 0.7rem 20px;
+    color: white;
+    fill: white;
+    text-decoration: none;
+    border-radius: 25px;
+    box-shadow: 0 0 5px #6600008f;
+} 
+
+.navegaçao{
+    margin: 0 200px 0;
 }
 
 #cabecalho-main{
