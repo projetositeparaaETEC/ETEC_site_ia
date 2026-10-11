@@ -24,6 +24,15 @@ body {
     box-shadow: 0 0 5px #00000049;
 }
 
+#texto_cabecalho{
+    margin-left: 50px;
+}
+
+#foto_ironman{
+    display: block;
+    width: 20px;
+}
+
 /* Botão do Cabeçalho */
 
 .navegacao a{
@@ -34,7 +43,7 @@ body {
 
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
-    /* border-radius: 25px; */
+
     gap: 1em;
     
     margin: 0.5rem 4rem;
@@ -42,31 +51,23 @@ body {
     color: white;
     text-decoration: none;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: clamp(0.65rem, 0.8vw, 0.75rem);
+    font-size: clamp(0.70rem, 1.3vw, 0.75rem);
+    letter-spacing: 1px;
     white-space: nowrap;
-
-    transition: background 0.2s ease, color 0.2s ease;
 }
-
-.menu__link img { 
-    width: 0.9em; 
-    height: 0.9em; 
-}
-
-
 
 /* Conteudo Principal */
 
 main{
     top: clamp(1.5rem, 5vw, 3rem);
-    margin: 0 clamp(0.6rem, 5vw, 2rem) 50px;
+    margin: 0 clamp(1.5rem, 6vw, 2rem) 50px;
     background: #fff3ec;
     padding: 3rem 0;
     box-shadow: 0 0 10px #00000049;
     border: 2px solid #8f8f8f2a;
 }
 
-#foto_turing{
+#foto{
     display: block;
     width: 100%;
     height: clamp(200px, 6vw, 300px);
@@ -83,9 +84,9 @@ main{
     white-space: nowrap;
     
     border-radius: 100px;
-    border: 2.8px solid var(--azul-escuro);
+    border: 4px solid var(--azul-escuro);
     
-    box-shadow: inset 0 0 5px #4284ff3b;
+    box-shadow: inset 0 0 6px #4284ff88;
 
     color: rgb(228, 228, 228);
     text-align: center;
@@ -103,7 +104,7 @@ main{
     margin: 0;
     font-family: "Domine", serif;
     max-width: 100%;
-    font-weight: 500;
+    font-weight: 700;
 }
 
 
@@ -126,16 +127,11 @@ main{
 
 #pesquisas{
     display: grid; 
-    grid-template-columns: 1.5fr 0.5fr;
+    grid-template-columns: 1.3fr 0.7fr;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-#secao_principal>hr{
-    height: 2px;
-    border: double 1px var(--azul);
-}
-
-
-#secao_principal, #secao_secundaria{
+#secao_principal, .secao_secundaria{
     display: inline-block;
     margin: 1.5rem;
 }
@@ -143,22 +139,59 @@ main{
 /* Texto Da Primeira Coluna */
 
 main #secao_principal{
+    line-height: 1.5rem;
+    margin-top: -0.9rem;
     text-align: justify;
     flex-direction: column;
     padding: 1rem;
 }
 
-#secao_principal h4{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+h4{
+    margin-bottom: 0.4rem;
     font-weight: 700;
-    font-size: 1.1rem;
+    font-size: 1.4rem;
 }
 
-/* Texto Da Segunda Coluna */
+#secao_principal p, li{
+    color: #000000d7;
+    font-weight: 450;
+    font-size: 1rem;
+}
 
-main #secao_secundaria{
+#secao_principal ul ol{
+    margin-top: -0.3rem;
+    margin-bottom: -0.2rem;
+}
+
+/* Segunda Coluna */
+
+main .secao_secundaria{
     background-color: #ecd5b7c9;
     text-align: justify;
     border-radius: 10px;
-    padding: 1rem 2rem;
+    height: fit-content;
+    padding: 0.5px 2rem 1rem;
+}
+
+.secao_secundaria h4{
+    margin-top: 15px;
+}
+
+.secao_secundaria ul{
+    font-size: clamp(0.5rem, 1rem, 2rem);
+    line-height: clamp(1.2rem, 3.5vw, 1.6rem);
+}
+
+
+.secao_secundaria ul li{
+    margin-left: -20px;
+}
+
+/* Imagem Hugging Face */
+
+#huggingface_img{
+    margin-left: auto;
+    margin-right: auto;
+    width: 25rem;
+    border-radius: 30px;
 }
