@@ -24,6 +24,37 @@ body {
     box-shadow: 0 0 5px #00000049;
 }
 
+/* Botão do Cabeçalho */
+
+.navegacao a{
+    text-align: center;
+
+    background-color: var(--azul);
+    padding: 0.7rem 20px;
+
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    /* border-radius: 25px; */
+    gap: 1em;
+    
+    margin: 0.5rem 4rem;
+    
+    color: white;
+    text-decoration: none;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: clamp(0.65rem, 0.8vw, 0.75rem);
+    white-space: nowrap;
+
+    transition: background 0.2s ease, color 0.2s ease;
+}
+
+.menu__link img { 
+    width: 0.9em; 
+    height: 0.9em; 
+}
+
+
+
 /* Conteudo Principal */
 
 main{
@@ -103,10 +134,13 @@ main{
     border: double 1px var(--azul);
 }
 
+
 #secao_principal, #secao_secundaria{
     display: inline-block;
     margin: 1.5rem;
 }
+
+/* Texto Da Primeira Coluna */
 
 main #secao_principal{
     text-align: justify;
@@ -120,39 +154,11 @@ main #secao_principal{
     font-size: 1.1rem;
 }
 
+/* Texto Da Segunda Coluna */
+
 main #secao_secundaria{
     background-color: #ecd5b7c9;
     text-align: justify;
     border-radius: 10px;
     padding: 1rem 2rem;
-}
-
-/* Botão do Menu */
-
-.navegacao a{
-    text-align: center;
-    justify-self: start;
-    background-color: var(--azul);
-    padding: 0.8rem 25px;
-    color: white;
-
-    text-decoration: none;
-    border-radius: 10px;
-    border: 1px double var(--azul-escuro);
-    display: inline-flex;
-    gap: 1em;
-    white-space: nowrap;
-    font-style: italic;
-
-    color: white;
-    margin: 0.5rem 4rem;
-
-    font-family: 'Old Standard TT', Georgia, serif;
-    font-size: clamp(0.7rem, 1.2vw, 0.85rem);
-    transition: background 0.2s ease, color 0.2s ease;
-}
-
-.menu__link img { 
-    width: 0.9em; 
-    height: 0.9em; 
 }
