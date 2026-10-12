@@ -11,7 +11,7 @@ body {
 
 #cabecalho-principal {
     background-color: hsl(0, 0%, 95%);
-    border-top: 4px solid var(--azul);
+    border-top: 5px solid var(--azul);
 
     padding: 0.5%;
     position: fixed;
@@ -25,12 +25,14 @@ body {
 }
 
 #texto_cabecalho{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     margin-left: 50px;
 }
 
 #foto_ironman{
-    display: block;
-    width: 20px;
+    display: flex;
+    filter: hue-rotate(215deg);
+    height: 35px;
 }
 
 /* Botão do Cabeçalho */
@@ -59,8 +61,7 @@ body {
 /* Conteudo Principal */
 
 main{
-    top: clamp(1.5rem, 5vw, 3rem);
-    margin: 0 clamp(1.5rem, 6vw, 2rem) 50px;
+    margin: 34px clamp(1.5rem, 6vw, 2rem) 90px;
     background: #fff3ec;
     padding: 3rem 0;
     box-shadow: 0 0 10px #00000049;
@@ -73,6 +74,35 @@ main{
     height: clamp(200px, 6vw, 300px);
     object-fit: cover;
     border-bottom: 2px solid #8f8f8f2a;
+}
+
+
+/* --- */
+
+#cabecalho-main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    box-sizing: border-box;
+    background-color: #f0dec6c9;
+    padding: 0.5rem;
+    padding-top: 1rem;
+    padding-bottom: 1.25rem;
+    position: sticky;  
+    margin-bottom: 0;
+    border-bottom: 2px solid #8f8f8f2a;
+}
+
+/* Titulo da Main */
+
+#titulo_main{
+    text-align: center;
+    margin: 0;
+    line-height: 1.01;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    max-width: 100%;
+    font-weight: 500;
 }
 
 /* Botão Do Main */
@@ -95,32 +125,6 @@ main{
     font-size: clamp(0.55rem, 1vw, 1rem);
     font-weight: 600;
     text-shadow: 1.3px 1.3px 0.6px #00000085;
-}
-
-/* --- */
-
-#titulo_main{
-    text-align: center;
-    margin: 0;
-    font-family: "Domine", serif;
-    max-width: 100%;
-    font-weight: 700;
-}
-
-
-#cabecalho-main{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 1rem;
-    box-sizing: border-box;
-    background-color: #f0dec6c9;
-    padding: 0.5rem;
-    padding-top: 1rem;
-    padding-bottom: 1.25rem;
-    position: sticky;  
-    margin-bottom: 0;
-    border-bottom: 2px solid #8f8f8f2a;
 }
 
 /* Texto da Main */
@@ -147,13 +151,14 @@ main #secao_principal{
 }
 
 h4{
-    margin-bottom: 0.4rem;
+    text-align: center;
+    margin-bottom: 0.6rem;
     font-weight: 700;
     font-size: 1.4rem;
 }
 
 #secao_principal p, li{
-    color: #000000d7;
+    color: #000000e0;
     font-weight: 450;
     font-size: 1rem;
 }
