@@ -1,4 +1,4 @@
-/* Importa a fonte do Google */
+
 @import url('https://googleapis.com');
 
 body {
@@ -84,9 +84,7 @@ body {
     border-radius: 8px;
     box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.15);
     width: 180px;
-
-    z-index: 1100;
-
+    z-index: 1100px;
 }
 
 /* Estilo dos links do menu */
@@ -158,7 +156,7 @@ body {
     }
 }
 
-@keyframes pIscar-cursor {
+@keyframes piscar-cursor {
 
     from,
     to {
@@ -240,9 +238,15 @@ body {
     justify-content: center;
     align-items: center;
     gap: 80px;
-    margin-top: 100px;
+    margin-top: 0;
+    /* Removido o espaço entre os blocos */
     padding: 60px 40px;
     box-sizing: border-box;
+}
+
+/* O primeiro bloco mantém um distanciamento adequado da caixa anterior */
+#layout {
+    margin-top: 60px;
 }
 
 /* --- BLOCO 1: Tema Google Gemini --- */
@@ -402,3 +406,4 @@ body {
     border-top: 1px solid #ccc;
     box-shadow: 1px -10px 30px 1px #5a5959;
 }
+
