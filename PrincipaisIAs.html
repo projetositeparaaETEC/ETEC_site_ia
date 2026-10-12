@@ -16,10 +16,28 @@
         <h3 id="texto_cabecalho">
             <img src="Img/capacete_ironman.png" id="foto_ironman">
         </h3>
-        <nav class="navegacao">
-            <a href="Index.html" id="botao_voltar">
-                Voltar para 1950
-            </a>
+        <nav class="navegacao" aria-label="Navegação principal">
+            <details class="navegacao__disclosure">
+                <summary class="navegacao__gatilho">
+                    <span class="navegacao__icone" aria-hidden="true"></span>
+                    Menu
+                </summary>
+                <div class="navegacao__painel">
+                    <div class="navegacao__cabecalho">
+                        <span>Explore o site</span>
+                        <span class="navegacao__contador">7 páginas</span>
+                    </div>
+                    <div class="navegacao__links">
+                        <a href="Index.html" class="navegacao__link">Jornal</a>
+                        <a href="PrincipaisIAs.html" class="navegacao__link" aria-current="page">Principais IAs</a>
+                        <a href="chat.html" class="navegacao__link">Chatbots de IA</a>
+                        <a href="ML.HTML" class="navegacao__link">Machine Learning</a>
+                        <a href="DL.html" class="navegacao__link">Deep Learning</a>
+                        <a href="SITETESTE.html" class="navegacao__link">Agentes de IA</a>
+                        <a href="construção.html" class="navegacao__link">Construção</a>
+                    </div>
+                </div>
+            </details>
         </nav>
     </header>
     <main>
