@@ -1,0 +1,75 @@
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.partecima_cabecalho>span, .partecima_cabecalho>a{
+    margin: 0 79px;
+}
+
+.partecima_cabecalho{
+    display: flex;
+    color: antiquewhite;
+    background-color: #2c293a;
+    padding: 20px;
+    justify-content: space-between;
+}
+
+#titulo-pagina{
+    font-family: "Alfa Slab One";
+    font-size: larger;
+}
+
+#pesquisar{
+    background-color: #555462;
+    border: none;
+    border-radius: 30px;
+    height: 1.7rem;
+    width: 30rem;
+    padding: 0 15px;
+    text-align: start;
+    outline: none;
+}
+
+abbr{
+    text-decoration: none;
+}
+
+#pesquisar::placeholder{
+    text-align: start;
+    color: #2c2a38;
+}
+
+#pagina_atual{
+    background-color: beige;
+    color: #070506;
+}
+
+#baixar_pesquisa{
+    font-family: Arial;
+    justify-self: center;
+    font-weight: 700;
+    text-decoration: none;
+    color: #295197;
+}
+
+header>nav{
+    display: flex;
+    justify-content: center;
+}
+
+
+nav{
+    background-color: #070506;
+    align-items: center;
+    gap: 40px;
+}
+
+nav>a{
+    color: azure;
+    text-decoration: none;
+    padding: 10px 20px;
+}
