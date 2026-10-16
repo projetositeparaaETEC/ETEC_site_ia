@@ -1,75 +1,148 @@
-header{
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 1000;
+body{
+    background: #22252a;
+    background: linear-gradient(0deg, #111214 65%, #26203b 100%);
 }
 
-.partecima_cabecalho>span, .partecima_cabecalho>a{
-    margin: 0 79px;
-}
+/* header */
 
-.partecima_cabecalho{
-    display: flex;
-    color: antiquewhite;
-    background-color: #2c293a;
-    padding: 20px;
-    justify-content: space-between;
-}
+    header{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 1000;
+    }
 
-#titulo-pagina{
-    font-family: "Alfa Slab One";
-    font-size: larger;
-}
+/* parte de cima do header */
 
-#pesquisar{
-    background-color: #555462;
-    border: none;
-    border-radius: 30px;
-    height: 1.7rem;
-    width: 30rem;
-    padding: 0 15px;
-    text-align: start;
-    outline: none;
-}
+    .partecima_cabecalho>span, .partecima_cabecalho>a{
+        margin: auto 79px;
+    }
 
-abbr{
-    text-decoration: none;
-}
+    .partecima_cabecalho{
+        display: flex;
+        color: antiquewhite;
+        background-color: #2c293a;
+        padding: 20px;
+        justify-content: space-between;
+    }
 
-#pesquisar::placeholder{
-    text-align: start;
-    color: #2c2a38;
-}
+    #titulo-pagina{
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        letter-spacing: 2px;
+        font-size: larger;
+        color: #ffffff;
+    }
 
-#pagina_atual{
-    background-color: beige;
-    color: #070506;
-}
+    #pesquisar{
+        background-color: #555462;
+        border: none;
+        border-radius: 30px;
+        height: 1.7rem;
+        width: 30rem;
+        padding: 0 15px;
+        text-align: start;
+        outline: none;
+    }
 
-#baixar_pesquisa{
-    font-family: Arial;
-    justify-self: center;
-    font-weight: 700;
-    text-decoration: none;
-    color: #295197;
-}
+    #pesquisar::placeholder{
+        text-align: start;
+        color: #2c2a38;
+    }
 
-header>nav{
-    display: flex;
-    justify-content: center;
-}
+    #baixar_pesquisa{
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        text-decoration: none;
+    }
 
+/* parte de baixo do header */
 
-nav{
-    background-color: #070506;
-    align-items: center;
-    gap: 40px;
-}
+    nav{
+        background-color: #070506;
+    }
 
-nav>a{
-    color: azure;
-    text-decoration: none;
-    padding: 10px 20px;
+    div>a{
+        color: azure;
+        text-decoration: none;
+        padding: 6px 20px;
+        text-align: center;
+        size
+        font-family: "Roboto", sans-serif;
+    }
+
+    #links_paginas{
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        margin: 0 15%;
+    }
+
+    /* links */
+
+    #pagina_pia{
+        flex: 1;
+        white-space: nowrap;
+        border-bottom: 2px solid #972929;
+    }
+
+    #pagina_hist{
+        flex: 1;
+        border-bottom: 2px solid #cc9828;
+    }
+
+    #pagina_chat{
+        flex: 1;
+        border-bottom: 2px solid #10a79f;
+    }
+
+    #pagina_ml{
+        flex: 1;
+        border-bottom: 2px solid #295197;
+    }
+
+    #pagina_dl{
+        flex: 1;
+        border-bottom: 2px solid #da09ac;
+    }
+
+    #pagina_construcao{
+        flex: 1;
+        border-bottom: 2px solid #ff693b;
+    }
+
+    #pagina_claude{
+        flex: 1;
+        border-bottom: 2px solid #35d32f;
+    }
+
+/* -------------------------------------------------- */
+
+/* conteudo */
+
+    .caixa{
+        display: flexbox;
+        justify-content: center;
+        align-items: center;
+
+        border: 2px solid #000;
+        border-radius: 5px;
+
+        box-shadow: inset 0 0 3px #ffffff17;
+
+        background-color: #0f0b0c;
+    }
+
+    #citacao{
+        color: antiquewhite;
+
+        padding: 0 200px;
+        margin: 120px 50% 0 20%;
+    }
+
+footer{
+    display: block;
+
+    padding: 20% 30%;
+    background-color: #0f0b0c;
+    margin-top: 100%;
 }
