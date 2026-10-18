@@ -162,12 +162,45 @@ body {
 	border: 1px solid #eee;
 }
  
-.imagem {
+.topico {
+	display: flex;
+	align-items: center;
+	gap: 20px;
     width: 100%;
-    max-width: 200px;
-    height: auto;
-    aspect-ratio: 1 / 1;
-    background-color: var(--fundo-caixas);
+    max-width: 100%;
+	margin: 20px 0;
+    padding: 0;
+}
+
+.topico img {
+	display: block;
+	flex: 0 0 200px;
+	width: 200px;
+	max-width: 40%;
+	height: auto;
+	object-fit: contain;
+}
+
+.topico:not(:has(img)) {
+	align-items: flex-start;
+	gap: 20px;
+}
+
+.topico:not(:has(img)) p {
+	flex: 1;
+	min-width: 0;
+	margin: 0;
+}
+
+.topico p {
+	flex: 1;
+	min-width: 0;
+	margin: 0;
+	color: var(--texto-principal);
+	font-size: 14px;
+	font-family: Verdana, sans-serif;
+	line-height: 1.7;
+	text-align: justify;
 }
 
 .rodape {
@@ -329,4 +362,29 @@ body {
     .caixa {
         max-width: 100%;
     }
+
+	.topico {
+		flex-direction: column;
+		align-items: center;
+		gap: 12px;
+	}
+
+	.topico img {
+		flex: none;
+		width: 100%;
+		max-width: 200px;
+	}
+
+	.topico p {
+		width: 100%;
+	}
+
+	.topico:not(:has(img)) {
+		flex-direction: column;
+		gap: 12px;
+	}
+
+	.topico:not(:has(img)) p {
+		width: 100%;
+	}
 }
