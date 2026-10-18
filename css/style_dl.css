@@ -1,7 +1,7 @@
 :root {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 14px;
-    --fundo: #f8f8f8;
+    --fundo: #fff;
     --fundo-banner: #5499ba;
     --fundo-menu: #224466;
     --fundo-caixas: #eeeeee;
@@ -144,9 +144,8 @@ body {
     background-color: var(--fundo-caixas);
     border-radius: 8px;
     margin: 0;
-    min-height: 300px;
+    min-height: 250px;
     max-width: 250px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .conteudo {
@@ -157,6 +156,10 @@ body {
     text-align: justify;
     margin: 0;
     min-height: auto;
+}
+
+.conteudo hr {
+	border: 1px solid #eee;
 }
  
 .imagem {
@@ -198,7 +201,7 @@ body {
 
 .conteudo-caixa {
     text-align: justify;
-    padding: 10px;
+    padding: 0 14px;
     color: var(--texto-principal);
 }
 
@@ -207,6 +210,10 @@ body {
     font-weight: bold;
     margin-bottom: 10px;
     color: #686667;
+}
+
+.conteudo-caixa hr {
+	border: 1px solid #ddd;
 }
 
 .frase-banner {
