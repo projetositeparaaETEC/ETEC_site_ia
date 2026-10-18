@@ -113,6 +113,8 @@ body {
 	padding: 8px 10px;
 	margin-bottom: 8px;
 	width: 100%;
+	max-width: 100%;
+	display: block;
 	border: 1px solid #fa2;
 	border-radius: 5px;
 	background: #fa2 url(https://web.archive.org/web/20100722014630im_/http://s.twimg.com/a/1279750718/images/fronts/bg-btn-signup.png) repeat-x 0 0;
@@ -120,6 +122,16 @@ body {
 	font-size: 18px;
 	font-weight: bold;
 	color: #333;
+	cursor: pointer;
+}
+
+.flutuante button:hover {
+	background-position: 0 -5px;
+	color: #111;
+}
+
+.flutuante button:active {
+	background-image: none;
 }
 
 .caixa {
@@ -185,11 +197,14 @@ body {
 
 .container-pesquisa {
     position: relative;
-    display: inline-block;
+    display: flex;
     width: 100%;
     max-width: 340px;
     opacity: 50%;
     transition: opacity 0.4s;
+	background: #fff;
+    border: 1px solid #fff;
+	border-radius: 5px;
 }
 
 .container-pesquisa:hover {
@@ -197,31 +212,38 @@ body {
 }
 
 .barra-pesquisa {
+	flex: 1;
+	min-width: 0;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 14px;
     padding: 5px 40px 5px 10px;
-    border-radius: 5px;
+    border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
     border: none;
     height: 32px;
-    width: 100%;
-    background: #fff;
     color: var(--texto-segundario);
     box-sizing: border-box;
 }
 
 .botao-pesquisa {
+	flex-shrink: 0;
     font-family: Arial, Helvetica, sans-serif;
-    position: absolute;
-    right: 1px;
-    top: 1px;
-    bottom: 1px;
-    padding: 0 15px;
-    background: linear-gradient(to bottom, #fff, #ccc);
+    padding: 5px 15px;
+    background: #bbb url(https://web.archive.org/web/20100722014630im_/http://s.twimg.com/a/1279750718/images/fronts/bg-btn-search.png) repeat-x 0 0;
     border-radius: 0 3px 3px 0;
     color: #333333;
     font-size: 14px;
     cursor: pointer;
-    border: none;
+	border: none;
+}
+
+.botao-pesquisa:hover {
+	background-position: 0 -5px;
+	color: #111;
+}
+
+.botao-pesquisa:active {
+	background-image: none;
 }
 
 /* Adjusts responsivos para telas menores (smartphones) */
