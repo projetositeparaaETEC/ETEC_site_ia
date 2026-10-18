@@ -168,12 +168,32 @@ body {
 }
 
 .rodape {
-    background: linear-gradient(to bottom, #ecedec,#efeeef);
-    padding: 20px;
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	gap: 15px;
+    background: #eee url(https://web.archive.org/web/20100722014630im_/http://s.twimg.com/a/1279750718/images/fronts/bg-ftr-top.gif) repeat-x 0 0;
+	width: 100%;
+	margin: 0 auto;
+    padding: 20px max(20px, calc((100% - 1170px) / 2));
     text-align: center;
     color: #666666;
     font-size: 14px;
-    min-height: 50px;
+    min-height: 70px;
+}
+
+.rodape p {
+	margin: 5px 0;
+}
+
+.rodape a {
+	margin-top: 5px;
+	color: #27b;
+	text-decoration: none;
+}
+
+.rodape a:hover {
+	text-decoration: underline;
 }
 
 .conteudo-caixa {
